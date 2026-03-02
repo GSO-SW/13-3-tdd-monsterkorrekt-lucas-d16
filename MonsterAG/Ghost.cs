@@ -8,16 +8,21 @@ namespace MonsterAG
 {
     public class Ghost
     {
+        private string name = "Spooky";
+        private int size = 1;
+
+
         public Ghost(string name)
         {
-            throw new NotImplementedException();
+            this.name = name;
+            this.Size = 1;
         }
 
         public string Name
         {
             get
             {
-                throw new NotImplementedException()();
+                return this.name;
             }
         }
 
@@ -25,17 +30,17 @@ namespace MonsterAG
         {
             get
             {
-                throw new NotImplementedException()();
+                return size;
             }
             set
             {
-                throw new NotImplementedException()();
+                size = value;
             }
         }
 
         public string Haunt()
         {
-            throw new NotImplementedException()();
+            return name + " sagt: 'Buh'";
         }
     }
 }
